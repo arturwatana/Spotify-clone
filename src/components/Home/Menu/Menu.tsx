@@ -1,4 +1,4 @@
-import spotify from "../../assets/Spotify_Logo_RGB_White.png";
+import spotify from "../../../assets/Spotify_Logo_RGB_White.png";
 import { IoHomeOutline } from "react-icons/io5";
 
 import { FiSearch } from "react-icons/fi";
@@ -35,11 +35,11 @@ export default function Menu() {
         </p>
       </div>
 
-      <div className="mt-96 h-52 flex flex-col justify-evenly pt-6 ">
+      <div className="mt-96 h-48 flex flex-col justify-evenly pt-8  ">
         <a href="" className="text-xs text-gray-400 hover:underline ">
           Cookies
         </a>
-        <button className="flex bg-black text-white border-2 rounded-full p-1 justify-center items-center text-sm font-bold">
+        <button className="flex bg-black border-gray-600 text-white border-2 rounded-full p-1 justify-center items-center text-sm font-bold hover:scale-105 hover:border-gray-200">
           <TfiWorld className="mr-1" /> Portugues do Brasil
         </button>
       </div>

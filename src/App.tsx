@@ -1,15 +1,19 @@
 import "./App.css";
-import NavBar from "./components/NavBar/NavBar";
-import Menu from "./components/Menu/Menu";
-import PlayListMenu from "./components/PlayListMenu/PlayListMenu";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import Login from "./pages/Login";
+import Container from "./components/Container/Container";
 
 function App() {
   return (
-    <body>
-      <NavBar />
-      <Menu />
-      <PlayListMenu />
-    </body>
+    <Router>
+      <Container>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </Container>
+    </Router>
   );
 }
 

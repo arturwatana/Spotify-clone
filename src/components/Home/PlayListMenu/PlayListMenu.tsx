@@ -1,26 +1,27 @@
-import PlaylistCard from "../PlayListCard/PlayListCard";
+import PlaylistCard from "../../PlayListCard/PlayListCard";
 
-import peacefulPiano from "../../assets/PeacefulPiano.png";
-import deepFocus from "../../assets/DeepFocus.png";
-import instrumentalStudy from "../../assets/InstrumentalStudy.png";
-import focusFlow from "../../assets/FocusFlow.png";
-import beatsToThinkTo from "../../assets/BeatsToThinkTo.png";
-import readingAdventure from "../../assets/ReadingAdventure.png";
-import relaxingReading from "../../assets/RelaxingReading.png";
-import quietMoment from "../../assets/quietmoment.png";
+import peacefulPiano from "../../../assets/PeacefulPiano.png";
+import deepFocus from "../../../assets/DeepFocus.png";
+import instrumentalStudy from "../../../assets/InstrumentalStudy.png";
+import focusFlow from "../../../assets/FocusFlow.png";
+import beatsToThinkTo from "../../../assets/BeatsToThinkTo.png";
+import readingAdventure from "../../../assets/ReadingAdventure.png";
+import relaxingReading from "../../../assets/RelaxingReading.png";
+import quietMoment from "../../../assets/quietmoment.png";
+import workDayLounge from "../../../assets/WorkDayLounge.png";
 
-import tdh from "../../assets/tdh.png";
-import rapCaviar from "../../assets/RapCaviar.png";
-import allOut2010 from "../../assets/Allout2010.png";
-import rockClassics from "../../assets/RockClassics.png";
-import chillHits from "../../assets/ChillHits.png";
-import vivaLatino from "../../assets/VivaLatino.png";
-import megaHit from "../../assets/MegaHit.png";
-import allOut80 from "../../assets/Allout80s.png";
+import tdh from "../../../assets/tdh.png";
+import rapCaviar from "../../../assets/RapCaviar.png";
+import allOut2010 from "../../../assets/Allout2010.png";
+import rockClassics from "../../../assets/RockClassics.png";
+import chillHits from "../../../assets/ChillHits.png";
+import vivaLatino from "../../../assets/VivaLatino.png";
+import megaHit from "../../../assets/MegaHit.png";
+import allOut80 from "../../../assets/Allout80s.png";
 
 export default function PlayListMenu() {
   return (
-    <div className="pl-8 pt-4 bg-gray-900 z-10 ml-57 w-full mt-16 fixed h-full">
+    <div className="pl-8 pt-4 bg-primary ml-57 w-full mt-16 fixed h-full">
       <div className="text-white">
         <h1 className="text-2xl font-bold">Foco</h1>
         <div className="pl-3 pt-6 flex gap-6">
@@ -38,6 +39,11 @@ export default function PlayListMenu() {
             img={instrumentalStudy}
             name="Instrumental Study"
             description="Focus with soft study music in the background."
+          />
+          <PlaylistCard
+            img={workDayLounge}
+            name="Workday Lounge"
+            description="Lounge and chill out music for your workday."
           />
           <PlaylistCard
             img={focusFlow}
