@@ -11,11 +11,13 @@ export default function NavBar() {
         </div>
         <div className="flex justify-end gap-6  w-80 mr-5">
           <button className="text-gray-500 font-bold hover:text-gray-200 hover:scale-105">
-            Inscrever-se
+            <Link to="/login">Inscrever-se</Link>
           </button>
-          <button className="bg-white text-black font-bold h-3/4 rounded-full w-28 m-2 hover:scale-105">
-            <Link to="/login">Entrar</Link>
-          </button>
+          <Link to="/login">
+            <button className="bg-white text-black font-bold h-3/4 rounded-full w-28 m-2 hover:scale-105">
+              Entrar
+            </button>
+          </Link>
         </div>
       </nav>
     </header>

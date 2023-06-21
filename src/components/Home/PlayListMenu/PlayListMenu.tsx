@@ -2,7 +2,6 @@ import PlaylistCard from "../../PlayListCard/PlayListCard";
 
 import peacefulPiano from "../../../assets/PeacefulPiano.png";
 import deepFocus from "../../../assets/DeepFocus.png";
-import instrumentalStudy from "../../../assets/InstrumentalStudy.png";
 import focusFlow from "../../../assets/FocusFlow.png";
 import beatsToThinkTo from "../../../assets/BeatsToThinkTo.png";
 import readingAdventure from "../../../assets/ReadingAdventure.png";
@@ -34,11 +33,6 @@ export default function PlayListMenu() {
             img={deepFocus}
             name="Deep Focus"
             description="Keep calm and focus with ambient and post-rock music."
-          />
-          <PlaylistCard
-            img={instrumentalStudy}
-            name="Instrumental Study"
-            description="Focus with soft study music in the background."
           />
           <PlaylistCard
             img={workDayLounge}
